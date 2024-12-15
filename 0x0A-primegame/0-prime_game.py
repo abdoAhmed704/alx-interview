@@ -5,19 +5,6 @@
 def isWinner(x, nums):
     """
     Determines the winner of a set of prime number removal games.
-
-    Args:
-        x (int): The number of rounds.
-        nums (list of int): A list of integers where each integer n denotes
-        a set of consecutive integers starting from 1 up to and including n.
-
-    Returns:
-        str: The name of the player who won the most rounds (either "Ben"
-        or "Maria").
-        None: If the winner cannot be determined.
-
-    Raises:
-        None.
     """
     if x <= 0 or nums is None:
         return None
@@ -45,16 +32,6 @@ def rm_multiples(ls, x):
     """
     Removes multiples of a prime number from an array of possible prime
     numbers.
-
-    Args:
-        ls (list of int): An array of possible prime numbers.
-        x (int): The prime number to remove multiples of.
-
-    Returns:
-        None.
-
-    Raises:
-        None.
     """
     for i in range(2, len(ls)):
         try:
